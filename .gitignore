@@ -14,4 +14,5 @@ scrollcraft/builds/*/node_modules/
 scrollcraft/builds/*/lab/*
 !scrollcraft/builds/*/lab/*.py
 !scrollcraft/builds/*/lab/*.sh
+!scrollcraft/builds/*/lab/*.mjs
 scrollcraft/lab/

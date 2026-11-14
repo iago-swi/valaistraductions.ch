@@ -4,6 +4,18 @@ Site for [Valais Traductions](https://www.valaistraductions.ch) — Philippe Not
 
 Static, trilingual (FR / EN / DE), no framework, no build step. HTML and CSS, a small scroll engine, a page script, and one PHP script for the contact form. It replaces the former WordPress site.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/desktop-home.png" alt="Desktop view of the home page: the cold side of the pass at blue hour" width="90%">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/mobile-home.png" alt="Mobile view of the home page" width="32%">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/desktop-crossing.png" alt="The far side of the pass at first light, with the paragraph translated into French" width="60%">
+</p>
+
 ## Structure
 
 ```
@@ -23,6 +35,8 @@ Static, trilingual (FR / EN / DE), no framework, no build step. HTML and CSS, a 
 ├── fr/  en/  de/       # One folder per language, mirrored content
 │   ├── index.html      # Home page
 │   └── betisier.html   # Bêtisier / Bloopers / Stilblüten
+├── docs/
+│   └── screenshots/    # Screenshots for this README (not deployed)
 └── scrollcraft/        # Design workspace: brief, prototype, plane-cutting script (not deployed)
 ```
 
@@ -52,8 +66,16 @@ php -S localhost:8124
 
 Then open <http://localhost:8124>. The contact form needs a mail server, so locally it shows its error message.
 
+To retake the screenshots above while that server runs (Node and `playwright-core` are only needed for this):
+
+```powershell
+cd scrollcraft/builds/valais-traductions
+npm install
+node lab/doc_shots.mjs
+```
+
 ## Deploying
 
-Copy the contents of this folder to the web root of an Apache host with PHP, without `scrollcraft/`, `.env` and `.git`. Before going live, check the two addresses at the top of `contact.php` (`MAIL_TO`, `MAIL_FROM`).
+Copy the contents of this folder to the web root of an Apache host with PHP, without `scrollcraft/`, `docs/`, `.env` and `.git`. Before going live, check the two addresses at the top of `contact.php` (`MAIL_TO`, `MAIL_FROM`).
 
 `.htaccess` redirects the old WordPress addresses (`/about/`, `/fr/a-propos/`, the blog posts, …) to their new place, so existing links and search results keep working.
