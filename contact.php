@@ -34,6 +34,7 @@ $lang    = in_array($_POST['lang'] ?? '', ['fr', 'en', 'de'], true) ? $_POST['la
 $name    = clean('name', 100);
 $email   = clean('email', 120);
 $task    = clean('task', 80);
+$variant = (($_POST['variant'] ?? '') === 'fr') ? 'France' : 'Suisse';   // which French the readers expect
 $message = clean('message', 4000);
 $isBot   = clean('website', 200) !== '';          // honeypot: humans never see this field
 
@@ -44,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   } elseif ($name !== '' && $message !== '' && filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $oneLine = fn(string $s): string => preg_replace('/[\r\n]+/', ' ', $s);   // no header injection
     $subject = 'Valais Traductions – ' . $oneLine($task !== '' ? $task : $name);
-    $body    = "Nom: $name\nE-mail: $email\nTravail: $task\nLangue: $lang\n\n$message\n";
+    $body    = "Nom: $name\nE-mail: $email\nTravail: $task\nFrançais de: $variant\nLangue du site: $lang\n\n$message\n";
     $headers = [
       'From'         => 'Valais Traductions <' . MAIL_FROM . '>',
       'Reply-To'     => $email,
@@ -72,16 +73,18 @@ $t = $texts[$lang];
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/scrollcraft.css">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<header class="site-header wrap">
-  <a class="brand" href="/<?= $lang ?>/"><img src="/images/logo.png" alt="Valais Traductions" width="880" height="322"></a>
+<div class="sc-grain" aria-hidden="true"></div>
+<header class="vt-bar">
+  <a class="vt-bar__logo" href="/<?= $lang ?>/"><img src="/images/logo-blanc.png" alt="Valais Traductions" width="880" height="322"></a>
 </header>
-<main class="wrap plain">
-  <h1><?= htmlspecialchars($ok ? $t['ok'] : $t['error']) ?></h1>
-  <a class="btn" href="/<?= $lang ?>/#contact"><?= htmlspecialchars($t['back']) ?></a>
+<main class="sc-wrap vt-plain">
+  <h1 class="sc-display vt-h2"><?= htmlspecialchars($ok ? $t['ok'] : $t['error']) ?></h1>
+  <a class="vt-cta" href="/<?= $lang ?>/#contact"><?= htmlspecialchars($t['back']) ?></a>
 </main>
 </body>
 </html>

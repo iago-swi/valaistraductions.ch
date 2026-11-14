@@ -2,7 +2,7 @@
 <html lang="de-CH">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Valais Traductions – Übersetzungen Deutsch-Französisch und Englisch-Französisch</title>
 <meta name="description" content="Philippe Noth, freiberuflicher Übersetzer im Wallis. Übersetzung, Revision und Korrektorat aus dem Deutschen und Englischen ins Französische – für die Schweiz oder für Frankreich.">
 <link rel="canonical" href="https://www.valaistraductions.ch/de/">
@@ -20,8 +20,12 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/scrollcraft.css">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="preload" as="image" href="../images/dusk-plate.webp">
+<!-- Without JavaScript nothing is driven by scroll: show every text in place. -->
+<noscript><style>[data-sc-cue], [data-sc-in], [data-sc-stagger] > * { opacity: 1 !important; transform: none !important; }</style></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,247 +42,221 @@
 }
 </script>
 </head>
-<body id="top">
-<a class="skip" href="#main">Zum Inhalt</a>
+<body>
+<a class="vt-skip" href="#services">Zum Inhalt</a>
+<div class="sc-grain" aria-hidden="true"></div>
 
-<header class="site-header wrap">
-  <a class="brand" href="index.html"><img src="../images/logo.png" alt="Valais Traductions" width="880" height="322"></a>
-  <nav class="site-nav" aria-label="Hauptnavigation">
-    <ul>
-      <li><a href="#services">Leistungen</a></li>
-      <li><a href="#fields">Fachgebiete</a></li>
-      <li><a href="#about">Über mich</a></li>
-      <li><a href="betisier.html">Stilblüten</a></li>
-      <li><a href="#contact">Kontakt</a></li>
-    </ul>
+<header class="vt-bar">
+  <a class="vt-bar__logo" href="#top"><img src="../images/logo-blanc.png" alt="Valais Traductions" width="880" height="322"></a>
+  <nav class="vt-bar__nav" aria-label="Hauptnavigation">
+    <a href="#services">Leistungen</a>
+    <a href="#fields">Fachgebiete</a>
+    <a href="#about">Über mich</a>
+    <a href="betisier.html">Stilblüten</a>
   </nav>
-  <nav class="lang" aria-label="Sprache">
-    <ul>
-      <li><a href="../fr/index.html" lang="fr" hreflang="fr" title="Français">FR</a></li>
-      <li><a href="../en/index.html" lang="en" hreflang="en" title="English">EN</a></li>
-      <li><a href="index.html" lang="de" hreflang="de" aria-current="page" title="Deutsch">DE</a></li>
-    </ul>
+  <nav class="vt-bar__lang" aria-label="Sprache">
+    <a href="../fr/index.html" lang="fr" hreflang="fr" title="Français">FR</a>
+    <a href="../en/index.html" lang="en" hreflang="en" title="English">EN</a>
+    <a href="index.html" lang="de" hreflang="de" aria-current="page" title="Deutsch">DE</a>
   </nav>
+  <a class="vt-cta vt-cta--small" href="#contact">Offerte anfragen</a>
 </header>
 
-<main id="main">
+<main>
 
-  <!-- Hero: the German source segment, then its French target -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-copy">
-        <h1><span>Ihre Texte gelangen ins Französische.</span> <span>Unterwegs geht nichts verloren.</span></h1>
-        <div class="segments segments-after">
-          <p><span class="tag">FR</span> <i lang="fr">Vos textes passent en français. Rien ne se perd en chemin.</i></p>
+  <!-- THE CROSSING. One stage, one continuous move:
+       stillness (the cold side at blue hour, four planes sliding apart as the page approaches the ridge),
+       a short dark beat when the ridge fills the frame,
+       then the peak: the ridge drops away, first light arrives, and the paragraph becomes French. -->
+  <section id="top" class="vt-cross" data-sc-act="pin" data-sc-span="5.4" data-sc-drift="#0C0E11">
+    <div data-sc-stage class="vt-scene">
+
+      <div class="vt-dusk">
+        <div class="vt-pl vt-pl--sky"><img src="../images/dusk-plate.webp" width="2400" height="1350" alt=""></div>
+        <div class="vt-skyshade" aria-hidden="true"></div>
+        <div class="vt-pl vt-pl--r3"><img src="../images/dusk-r3.webp" width="2400" height="1350" alt=""></div>
+        <div class="vt-hero__title" data-sc-cue="0 0.36 0 0.03">
+          <h1 class="sc-display vt-h1">Ihre Texte gelangen ins Französische.</h1>
         </div>
-        <p class="lead">Philippe Noth, freiberuflicher Übersetzer in Guttet im Wallis. Ich übersetze und revidiere aus dem Deutschen und Englischen ins Französische – für die Schweiz oder für Frankreich.</p>
-        <p class="hero-actions">
-          <a class="btn" href="#contact">Offerte anfragen</a>
-          <a class="tel" href="tel:+41793055350">+41 79 305 53 50</a>
+        <div class="vt-pl vt-pl--r2"><img src="../images/dusk-r2.webp" width="2400" height="1350" alt=""></div>
+        <div class="vt-pl vt-pl--r1"><img src="../images/dusk-r1.webp" width="2400" height="1350" alt=""></div>
+      </div>
+
+      <div class="vt-dawn">
+        <picture class="vt-pl vt-dawn__img">
+          <source media="(max-width: 700px)" srcset="../images/dawn-m.webp">
+          <img src="../images/dawn.webp" width="2400" height="1350" alt="Ein Walliser Dorf mit weisser Kirche im Talgrund, im ersten Morgenlicht.">
+        </picture>
+        <div class="vt-dawn__shade" aria-hidden="true"></div>
+        <div class="vt-pl vt-pl--ledge"><img src="../images/dusk-r1.webp" width="2400" height="1350" alt=""></div>
+      </div>
+
+      <div class="vt-hero__copy" data-sc-cue="0 0.13 0">
+        <p class="sc-lede">Unterwegs geht nichts verloren. Philippe Noth, freiberuflicher Übersetzer in Guttet im Wallis: aus dem Deutschen und Englischen ins Französische, für die Schweiz oder für Frankreich.</p>
+        <p class="vt-actions">
+          <a class="vt-cta" href="#contact">Offerte anfragen</a>
+          <a class="vt-tel" href="tel:+41793055350">+41 79 305 53 50</a>
+        </p>
+      </div>
+
+      <!-- The paragraph ships in French; the script turns it back to the source and lets scroll translate it. -->
+      <div class="vt-trans" data-sc-cue="0.365 0.99 0.04 0.02">
+        <p class="vt-trans__pair">Deutsch <span aria-hidden="true">→</span> Französisch</p>
+        <p class="vt-trans__text">
+          <span class="vt-seg is-fr"><span class="vt-seg__src">Über den Pass führt ein alter Saumweg.</span><span class="vt-seg__tgt" lang="fr">Un ancien chemin muletier franchit le col.</span></span>
+          <span class="vt-seg is-fr"><span class="vt-seg__src">Wer ihn geht, wechselt nicht nur das Tal, sondern auch die Sprache.</span><span class="vt-seg__tgt" lang="fr">Qui l’emprunte ne change pas seulement de vallée, mais aussi de langue.</span></span>
+          <span class="vt-seg is-fr"><span class="vt-seg__src">Ein Text macht dieselbe Reise.</span><span class="vt-seg__tgt" lang="fr">Un texte fait le même voyage.</span></span>
+          <span class="vt-seg is-fr"><span class="vt-seg__src">Unterwegs darf nichts verloren gehen: kein Sinn, kein Ton, kein Detail.</span><span class="vt-seg__tgt" lang="fr">En chemin, rien ne doit se perdre&nbsp;: ni le sens, ni le ton, ni le moindre détail.</span></span>
         </p>
       </div>
     </div>
-    <svg class="ridge" viewBox="0 0 1600 400" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false">
-      <g class="line">
-        <path d="M0 352 L70 338 L130 350 L215 300 L265 322 L330 270 L372 292 L410 280 L500 334 L560 318 L640 340 L720 300 L790 322 L880 262 L925 286 L960 270 L1040 196 L1072 224 L1130 82 L1210 192 L1236 174 L1300 268 L1345 246 L1410 312 L1470 290 L1540 340 L1600 328"/>
-        <path class="snowline" d="M1087 187 L1110 158 L1123 173 L1138 155 L1196 173"/>
-      </g>
-      <polygon class="star" points="0,-10 2.25,-3.09 9.51,-3.09 3.63,1.18 5.88,8.09 0,3.82 -5.88,8.09 -3.63,1.18 -9.51,-3.09 -2.25,-3.09" transform="translate(1262 58) rotate(-14) scale(1.9)"/>
-      <polygon class="star" points="0,-10 2.25,-3.09 9.51,-3.09 3.63,1.18 5.88,8.09 0,3.82 -5.88,8.09 -3.63,1.18 -9.51,-3.09 -2.25,-3.09" transform="translate(1346 30) rotate(8) scale(1.9)"/>
-      <polygon class="star" points="0,-10 2.25,-3.09 9.51,-3.09 3.63,1.18 5.88,8.09 0,3.82 -5.88,8.09 -3.63,1.18 -9.51,-3.09 -2.25,-3.09" transform="translate(1418 86) rotate(-6) scale(1.9)"/>
-    </svg>
   </section>
 
-  <section class="band" id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Leistungen</h2>
-        <p>Ich arbeite für Direktkunden und für Übersetzungsagenturen – für einzelne Aufträge oder langfristig.</p>
+  <section id="services" class="sc-section vt-services" data-sc-act="flow" data-sc-drift="#13110F">
+    <div class="sc-wrap">
+      <div class="vt-head" data-sc-in>
+        <h2 class="sc-display vt-h2">Leistungen</h2>
+        <p class="sc-lede">Ich arbeite für Direktkunden und für Übersetzungsagenturen, für einzelne Aufträge oder langfristig.</p>
       </div>
-      <ul class="rows">
+      <ul class="vt-rows" data-sc-in data-sc-stagger="70">
         <li>
           <h3>Übersetzung</h3>
-          <div class="row-body">
-            <p>Ich übersetze Ihre Texte aus dem Deutschen und Englischen ins Französische: Websites, Software, Magazine, Dokumentationen, Unternehmenskommunikation. Das Ziel bleibt dasselbe: ein Text, der sich liest, als wäre er auf Französisch geschrieben worden.</p>
-            <p class="pairs"><em>Deutsch <span aria-hidden="true">→</span> Französisch</em> <em>Englisch <span aria-hidden="true">→</span> Französisch</em></p>
-          </div>
+          <p>Aus dem Deutschen und Englischen ins Französische: Websites, Software, Magazine, Dokumentationen, Unternehmenskommunikation. Das Ziel bleibt dasselbe: ein Text, der sich liest, als wäre er auf Französisch geschrieben worden.</p>
         </li>
         <li>
           <h3>Revision und Korrektorat</h3>
-          <div class="row-body">
-            <p>Zweisprachige Revision: Ich vergleiche die Übersetzung mit dem Original und prüfe Sinn, Terminologie und Einheitlichkeit. Einsprachiges Korrektorat: Ich korrigiere Rechtschreibung, Grammatik und Typografie des französischen Textes.</p>
-          </div>
+          <p>Zweisprachige Revision: Ich vergleiche die Übersetzung mit dem Original und prüfe Sinn, Terminologie und Einheitlichkeit. Einsprachiges Korrektorat: Ich korrigiere Rechtschreibung, Grammatik und Typografie des französischen Textes.</p>
         </li>
         <li>
           <h3>Post-Editing</h3>
-          <div class="row-body">
-            <p>Ein maschinell vorübersetzter Text bleibt ein Entwurf. Ich überarbeite ihn Segment für Segment, bis er stimmt, einheitlich ist und sich angenehm liest.</p>
-          </div>
+          <p>Ein maschinell vorübersetzter Text bleibt ein Entwurf. Ich überarbeite ihn Segment für Segment, bis er stimmt, einheitlich ist und sich angenehm liest.</p>
         </li>
         <li>
           <h3>Dolmetschen</h3>
-          <div class="row-body">
-            <p>Wenn Sie in der Schweiz sind, komme ich vorbei und helfe bei der Verständigung zwischen französisch-, deutsch- und italienischsprachigen Personen. Ich verstehe und spreche diese drei Landessprachen sowie Englisch.</p>
-          </div>
+          <p>Wenn Sie in der Schweiz sind, komme ich vorbei und helfe bei der Verständigung zwischen französisch-, deutsch- und italienischsprachigen Personen. Ich verstehe und spreche diese drei Landessprachen sowie Englisch.</p>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="band band-ice" id="swiss">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Französisch für die Schweiz oder für Frankreich?</h2>
-        <p>Derselbe deutsche Text ergibt in Lausanne nicht dieselbe Übersetzung wie in Lyon. Ich lokalisiere Ihre Texte für die Westschweiz oder für Frankreich – je nachdem, wer sie liest.</p>
-      </div>
-      <table class="loc">
-        <thead>
-          <tr>
-            <th scope="col">Deutsch <span>Ausgangstext</span></th>
-            <th scope="col">Französisch, Schweiz <span>fr-CH</span></th>
-            <th scope="col">Französisch, Frankreich <span>fr-FR</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Aktion: 3 für 2</td>
-            <td lang="fr" data-label="Französisch, Schweiz"><b>Action</b>&nbsp;: 3 pour 2</td>
-            <td lang="fr" data-label="Französisch, Frankreich"><b>Promotion</b>&nbsp;: 3 pour 2</td>
-          </tr>
-          <tr>
-            <td>Siebzig Franken pro Nacht</td>
-            <td lang="fr" data-label="Französisch, Schweiz"><b>Septante</b> francs la nuit</td>
-            <td lang="fr" data-label="Französisch, Frankreich"><b>Soixante-dix</b> francs la nuit</td>
-          </tr>
-          <tr>
-            <td>Postfach 55</td>
-            <td lang="fr" data-label="Französisch, Schweiz"><b>Case</b> postale 55</td>
-            <td lang="fr" data-label="Französisch, Frankreich"><b>Boîte</b> postale 55</td>
-          </tr>
-          <tr>
-            <td>CHF 1’250.50</td>
-            <td lang="fr" data-label="Französisch, Schweiz"><b>CHF 1’250.50</b></td>
-            <td lang="fr" data-label="Französisch, Frankreich"><b>1&#8239;250,50&nbsp;CHF</b></td>
-          </tr>
-          <tr>
-            <td>Rufen Sie uns auf dem Handy an.</td>
-            <td lang="fr" data-label="Französisch, Schweiz">Appelez-nous sur le <b>natel</b>.</td>
-            <td lang="fr" data-label="Französisch, Frankreich">Appelez-nous sur le <b>portable</b>.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="band" id="fields">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Fachgebiete</h2>
-        <p>Themen, die ich von innen kenne, weil ich darin gearbeitet oder darüber geschrieben habe.</p>
-      </div>
-      <dl class="rows">
-        <div>
-          <dt>Informatik und Software</dt>
-          <dd>Als Informatikingenieur habe ich über zwanzig Jahre lang als Entwickler an einem grossen IT-Projekt gearbeitet. Ich übersetze, post-editiere und prüfe technische Inhalte für grosse IT-Unternehmen und für eine der grössten Übersetzungsagenturen der Welt.</dd>
+  <section id="fields" class="vt-fields" data-sc-act="pan" data-sc-span="2.8" data-sc-drift="#141210">
+    <div data-sc-stage>
+      <div class="vt-rail" data-sc-pan="0.04">
+        <div class="vt-rail__lead">
+          <h2 class="sc-display vt-h2">Fachgebiete</h2>
+          <p class="sc-lede">Themen, die ich von innen kenne, weil ich darin gearbeitet oder darüber geschrieben habe.</p>
         </div>
-        <div>
-          <dt>Tourismus</dt>
-          <dd>Mit <a href="https://www.saas-fee.ch/de/" rel="noopener">Saas-Fee Tourismus</a> habe ich am Destinationsmagazin <a href="https://www.saas-fee.ch/fr/a-propos-de-la-destination/magazine-saas-fee-saastal-4545" rel="noopener" hreflang="fr">4545</a> gearbeitet.</dd>
+        <article class="vt-card">
+          <figure><img src="../images/card-it.webp" width="900" height="1200" alt="Ein aufgeklappter Laptop leuchtet auf einem Holztisch in einem Chalet, in der Abenddämmerung." loading="lazy"></figure>
+          <h3>Informatik und Software</h3>
+          <p>Als Informatikingenieur habe ich über zwanzig Jahre lang als Entwickler an einem grossen IT-Projekt gearbeitet. Ich übersetze, post-editiere und prüfe technische Inhalte für grosse IT-Unternehmen.</p>
+        </article>
+        <article class="vt-card">
+          <figure><img src="../images/card-tourisme.webp" width="900" height="1200" alt="Eine rote Gondel über einem Gletscher im ersten Morgenlicht." loading="lazy"></figure>
+          <h3>Tourismus</h3>
+          <p>Mit <a href="https://www.saas-fee.ch/de/" rel="noopener">Saas-Fee Tourismus</a> habe ich am Destinationsmagazin <a href="https://www.saas-fee.ch/fr/a-propos-de-la-destination/magazine-saas-fee-saastal-4545" rel="noopener" hreflang="fr">4545</a> gearbeitet.</p>
+        </article>
+        <article class="vt-card">
+          <figure><img src="../images/card-commerce.webp" width="900" height="1200" alt="Das erleuchtete Schaufenster eines kleinen Dorfladens in der Abenddämmerung." loading="lazy"></figure>
+          <h3>Detailhandel</h3>
+          <p>Tägliche Übersetzungen aus dem Deutschen ins Französische für einen führenden europäischen Detailhändler. Auch andere Händler vertrauen mir ihre Texte an.</p>
+        </article>
+        <article class="vt-card">
+          <figure><img src="../images/card-montagne.webp" width="900" height="1200" alt="Ein Gratweg und ein Felsblock mit weiss-rot-weisser Wegmarkierung." loading="lazy"></figure>
+          <h3>Berge und Outdoor</h3>
+          <p>Als Autor von zwei Wanderführern, erschienen bei den Éditions Slatkine, kenne ich den Wortschatz von Gelände, Karte und Weg.</p>
+        </article>
+        <div class="vt-rail__note">
+          <h3>Ausserdem</h3>
+          <p>Für <a href="https://translatorswithoutborders.org/" rel="noopener">Translators without Borders</a> habe ich ehrenamtlich Dokumente über die Herausforderungen des Fairtrade-Kaffees übersetzt.</p>
+          <p>Seit 2018 vertraut mir eine der grössten Übersetzungsagenturen der Welt IT-Projekte an.</p>
         </div>
-        <div>
-          <dt>Detailhandel</dt>
-          <dd>Tägliche Übersetzungen aus dem Deutschen ins Französische für einen führenden europäischen Detailhändler. Auch andere Händler vertrauen mir ihre Texte an.</dd>
-        </div>
-        <div>
-          <dt>Berge und Outdoor</dt>
-          <dd>Als Autor von zwei Wanderführern, erschienen bei den Éditions Slatkine, kenne ich den Wortschatz von Gelände, Karte und Weg.</dd>
-        </div>
-        <div>
-          <dt>Freiwilligenarbeit</dt>
-          <dd>Für <a href="https://translatorswithoutborders.org/" rel="noopener">Translators without Borders</a> habe ich Dokumente über die Herausforderungen des Fairtrade-Kaffees übersetzt.</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="band band-flush" id="about">
-    <div class="wrap about">
-      <figure>
-        <img src="../images/philippe-noth.jpg" alt="Philippe Noth sitzt auf einem Felsen in den Bergen" width="800" height="1000" loading="lazy">
-      </figure>
-      <div class="about-text">
-        <h2>Über mich</h2>
-        <div class="prose">
-          <p>Ich heisse Philippe Noth. Als Informatikingenieur mit vier Sprachen habe ich über zwanzig Jahre lang als Entwickler an einem grossen IT-Projekt gearbeitet. Diese Erfahrung nutze ich heute in einer zweiten Laufbahn: als freiberuflicher Übersetzer und Revisor unter dem Namen Valais Traductions.</p>
-          <p>Ausserdem habe ich zwei Wanderführer geschrieben, die auf Französisch bei den Éditions Slatkine in Genf erschienen sind. Sie beschreiben einsame Routen in den Schweizer Alpen – in einer Sprache, die sich gern lesen lässt.</p>
-          <p>Und schliesslich habe ich lange die Web-Stilblüten betrieben, eine Sammlung unfreiwillig komischer Übersetzungen aus dem Internet. Hier leben sie weiter: <a href="betisier.html">zu den Stilblüten</a>.</p>
-          <p>Meinen Lebenslauf sende ich Ihnen gern auf Anfrage. Sie finden mich auch auf <a href="https://www.proz.com/profile/580542" rel="noopener">ProZ.com</a>, auf <a href="https://www.linkedin.com/in/philippe-noth/" rel="noopener">LinkedIn</a> und auf <a href="https://noth.ch/de/">noth.ch</a>.</p>
-        </div>
-        <ul class="books">
-          <li>
-            <img src="../images/livre-valais.jpg" alt="" width="106" height="156" loading="lazy">
-            <p><a href="https://www.slatkine.com/fr/editions-slatkine/22078-book-07210551-9782832105511.html" rel="noopener" lang="fr" hreflang="fr">Randonnées pour grizzlys et autres animaux solitaires</a> <span>Walliser Alpen, 2013, auf Französisch</span></p>
-          </li>
-          <li>
-            <img src="../images/livre-vaud-fribourg-berne.jpg" alt="" width="106" height="156" loading="lazy">
-            <p><a href="https://www.slatkine.com/fr/editions-slatkine/70175-book-07210809-9782832108093.html" rel="noopener" lang="fr" hreflang="fr">Randonnées pour grizzlys et autres animaux solitaires</a> <span>Waadtländer, Freiburger und Berner Alpen und Voralpen, 2017, auf Französisch</span></p>
-          </li>
-        </ul>
       </div>
     </div>
   </section>
 
-  <section class="band band-flush" id="bloopers">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Stilblüten</h2>
-        <p>Maschinen übersetzen besser als früher, aber auch sie haben schlechte Tage. Ein paar Perlen aus meinem Archiv, auf Französisch und auf Englisch.</p>
+  <section id="swiss" class="sc-section vt-swiss" data-sc-act="flow" data-sc-drift="#141210">
+    <div class="sc-wrap vt-swiss__grid">
+      <div class="vt-head" data-sc-in>
+        <h2 class="sc-display vt-h2">Französisch für die Schweiz oder für Frankreich?</h2>
+        <p class="sc-lede">Derselbe deutsche Text ergibt in Lausanne nicht dieselbe Übersetzung wie in Lyon. Wählen Sie Ihre Leserschaft.</p>
+        <div class="vt-switch" role="group" aria-label="Variante des Französischen">
+          <button type="button" data-variant="ch" aria-pressed="true">Schweiz</button>
+          <button type="button" data-variant="fr" aria-pressed="false">Frankreich</button>
+        </div>
       </div>
-      <ul class="teaser-list">
-        <li><a href="betisier.html#jamais-deux-sans-trois"><span lang="fr">Jamais deux sans trois</span> <small>DeepL verdreifacht doppelte Wörter</small></a></li>
-        <li><a href="betisier.html#specialiste-pokemon"><span lang="fr">Spécialiste Pokémon</span> <small>Ein unerwarteter Reiseführer</small></a></li>
-        <li><a href="betisier.html#continental-drift"><span lang="en">Continental drift</span> <small>Island vor der Küste Afrikas</small></a></li>
-        <li><a href="betisier.html#a-long-awaited-software-change"><span lang="en">A long awaited software change</span> <small>Ein Update, geplant für 2033</small></a></li>
+      <ul class="vt-loc" data-variant="ch" data-sc-in data-sc-stagger="60">
+        <li><span class="vt-loc__src">Aktion: 3 für 2</span>
+            <span class="vt-loc__tgt" lang="fr"><span data-v="ch"><b>Action</b>&nbsp;: 3 pour 2</span><span data-v="fr"><b>Promotion</b>&nbsp;: 3 pour 2</span></span></li>
+        <li><span class="vt-loc__src">Siebzig Franken pro Nacht</span>
+            <span class="vt-loc__tgt" lang="fr"><span data-v="ch"><b>Septante</b> francs la nuit</span><span data-v="fr"><b>Soixante-dix</b> francs la nuit</span></span></li>
+        <li><span class="vt-loc__src">Postfach 55</span>
+            <span class="vt-loc__tgt" lang="fr"><span data-v="ch"><b>Case</b> postale 55</span><span data-v="fr"><b>Boîte</b> postale 55</span></span></li>
+        <li><span class="vt-loc__src">CHF 1’250.50</span>
+            <span class="vt-loc__tgt" lang="fr"><span data-v="ch"><b>CHF 1’250.50</b></span><span data-v="fr"><b>1&#8239;250,50&nbsp;CHF</b></span></span></li>
+        <li><span class="vt-loc__src">Rufen Sie uns auf dem Handy an.</span>
+            <span class="vt-loc__tgt" lang="fr"><span data-v="ch">Appelez-nous sur le <b>natel</b>.</span><span data-v="fr">Appelez-nous sur le <b>portable</b>.</span></span></li>
       </ul>
     </div>
   </section>
 
-  <section class="band band-ink" id="contact">
-    <div class="wrap contact">
-      <div class="contact-info">
-        <h2>Kontakt</h2>
-        <p>Suchen Sie einen flexiblen und sorgfältigen Sprachprofi für Ihr Übersetzungsprojekt? Möchten Sie einen Text für den Schweizer Markt lokalisieren oder sicherstellen, dass eine bestehende Übersetzung keine Fehler und Unstimmigkeiten enthält? Schreiben Sie mir, ich nenne Ihnen gern meine Tarife und meine Verfügbarkeit.</p>
-        <address>
-          Valais Traductions<br>
-          Philippe Noth<br>
-          Dorf Guttet 55<br>
-          3956 Guttet, Schweiz<br>
-          <a href="tel:+41793055350">+41 79 305 53 50</a>
-        </address>
-        <ul class="links">
-          <li><a href="https://www.linkedin.com/in/philippe-noth/" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://www.proz.com/profile/580542" rel="noopener">ProZ.com</a></li>
+  <section id="about" class="sc-section vt-about" data-sc-act="flow" data-sc-drift="#13110F">
+    <div class="sc-wrap vt-about__grid">
+      <figure class="vt-about__photo" data-sc-reveal="up" data-sc-reveal-at="0.1 0.42">
+        <img src="../images/philippe-noth.jpg" width="800" height="1000" alt="Philippe Noth sitzt auf einem Felsen in den Bergen." loading="lazy">
+      </figure>
+      <div class="vt-about__text" data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display vt-h2">Über mich</h2>
+        <p>Ich heisse Philippe Noth. Als Informatikingenieur mit vier Sprachen habe ich über zwanzig Jahre lang als Entwickler an einem grossen IT-Projekt gearbeitet. Diese Erfahrung nutze ich heute in einer zweiten Laufbahn: als freiberuflicher Übersetzer und Revisor unter dem Namen Valais Traductions.</p>
+        <p>Ausserdem habe ich zwei Wanderführer geschrieben, die auf Französisch bei den Éditions Slatkine in Genf erschienen sind. Sie beschreiben einsame Routen in den Schweizer Alpen, in einer Sprache, die sich gern lesen lässt.</p>
+        <p>Und schliesslich habe ich lange die Web-Stilblüten betrieben, eine Sammlung unfreiwillig komischer Übersetzungen aus dem Internet. Hier leben sie weiter: <a href="betisier.html">zu den Stilblüten</a>.</p>
+        <p>Meinen Lebenslauf sende ich Ihnen gern auf Anfrage.</p>
+        <ul class="vt-books">
+          <li>
+            <img src="../images/livre-valais.jpg" alt="" width="106" height="156" loading="lazy">
+            <p><a href="https://www.slatkine.com/fr/editions-slatkine/22078-book-07210551-9782832105511.html" rel="noopener" lang="fr">Randonnées pour grizzlys et autres animaux solitaires</a> <span>Walliser Alpen, 2013, auf Französisch</span></p>
+          </li>
+          <li>
+            <img src="../images/livre-vaud-fribourg-berne.jpg" alt="" width="106" height="156" loading="lazy">
+            <p><a href="https://www.slatkine.com/fr/editions-slatkine/70175-book-07210809-9782832108093.html" rel="noopener" lang="fr">Randonnées pour grizzlys et autres animaux solitaires</a> <span>Waadtländer, Freiburger und Berner Alpen und Voralpen, 2017, auf Französisch</span></p>
+          </li>
         </ul>
       </div>
+    </div>
+  </section>
 
-      <form class="contact-form" action="../contact.php" method="post" data-contact-form
+  <!-- ARRIVAL. The form, then the valley in daylight, and the page stops. -->
+  <section id="contact" class="vt-contact" data-sc-act="flow" data-sc-drift="#12100E">
+    <div class="sc-wrap vt-contact__grid">
+      <div class="vt-contact__info" data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display vt-h2">Ihr Text, auf der anderen Seite.</h2>
+        <p class="sc-lede">Suchen Sie einen flexiblen und sorgfältigen Sprachprofi, oder möchten Sie sicherstellen, dass eine bestehende Übersetzung keine Fehler und Unstimmigkeiten enthält? Schreiben Sie mir, ich nenne Ihnen gern meine Tarife und meine Verfügbarkeit.</p>
+        <address>
+          Valais Traductions, Philippe Noth<br>
+          Dorf Guttet 55, 3956 Guttet, Schweiz<br>
+          <a href="tel:+41793055350">+41 79 305 53 50</a>
+        </address>
+        <p class="vt-links"><a href="https://www.linkedin.com/in/philippe-noth/" rel="noopener">LinkedIn</a> <a href="https://www.proz.com/profile/580542" rel="noopener">ProZ.com</a> <a href="https://noth.ch/de/">noth.ch</a></p>
+      </div>
+
+      <form class="vt-form" action="../contact.php" method="post" data-sc-in data-contact-form
             data-ok="Nachricht gesendet. Ich melde mich so bald wie möglich bei Ihnen."
             data-error="Die Nachricht konnte nicht gesendet werden. Rufen Sie mich bitte an: +41 79 305 53 50."
             data-sending="Wird gesendet…">
         <input type="hidden" name="lang" value="de">
-        <div class="hp" aria-hidden="true">
+        <div class="vt-hp" aria-hidden="true">
           <label for="website">Website</label>
           <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
         </div>
-        <div class="field">
+        <div class="vt-field">
           <label for="name">Ihr Name</label>
           <input type="text" id="name" name="name" autocomplete="name" required maxlength="100">
         </div>
-        <div class="field">
+        <div class="vt-field">
           <label for="email">Ihre E-Mail</label>
           <input type="email" id="email" name="email" autocomplete="email" required maxlength="120">
         </div>
-        <div class="field">
+        <div class="vt-field vt-field--half">
           <label for="task">Art der Arbeit</label>
           <select id="task" name="task">
             <option>Übersetzung Deutsch-Französisch</option>
@@ -288,30 +266,37 @@
             <option>Anderes</option>
           </select>
         </div>
-        <div class="field">
+        <div class="vt-field vt-field--half">
+          <label for="variant">Französisch für</label>
+          <select id="variant" name="variant">
+            <option value="ch">Schweiz</option>
+            <option value="fr">Frankreich</option>
+          </select>
+        </div>
+        <div class="vt-field">
           <label for="message">Ihre Nachricht</label>
           <textarea id="message" name="message" required maxlength="4000"></textarea>
         </div>
-        <button class="btn" type="submit">Nachricht senden</button>
-        <p class="form-status" role="status" aria-live="polite"></p>
+        <button class="vt-cta" type="submit">Offerte anfragen</button>
+        <p class="vt-status" role="status" aria-live="polite"></p>
       </form>
     </div>
+
+    <figure class="vt-arrival">
+      <img src="../images/dawn.webp" width="2400" height="1350" alt="" loading="lazy">
+    </figure>
+    <footer class="vt-foot">
+      <div class="sc-wrap">
+        <img src="../images/logo-blanc.png" alt="Valais Traductions" width="880" height="322" loading="lazy">
+        <span>© 2026 Valais Traductions, Philippe Noth, Guttet</span>
+        <span class="vt-foot__links"><a href="https://valaisit.ch/de/">ValaisIT.ch</a> <a href="#top">Nach oben</a></span>
+      </div>
+    </footer>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <img src="../images/logo-blanc.png" alt="Valais Traductions" width="880" height="322" loading="lazy">
-    <span>© 2026 Valais Traductions, Philippe Noth, Guttet</span>
-    <ul>
-      <li><a href="https://noth.ch/de/">noth.ch</a></li>
-      <li><a href="https://valaisit.ch/de/">ValaisIT.ch</a></li>
-      <li><a href="#top">Nach oben</a></li>
-    </ul>
-  </div>
-</footer>
-
-<script src="../js/script.js" defer></script>
+<script src="../js/scrollcraft.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>

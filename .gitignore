@@ -4,3 +4,14 @@ desktop.ini
 
 # Local only: Claude settings
 .claude/
+
+# Secrets (API keys): never commit
+.env
+
+# Scroll-craft workspace: generated originals, screenshots and tooling stay local
+scrollcraft/builds/*/out/
+scrollcraft/builds/*/node_modules/
+scrollcraft/builds/*/lab/*
+!scrollcraft/builds/*/lab/*.py
+!scrollcraft/builds/*/lab/*.sh
+scrollcraft/lab/
