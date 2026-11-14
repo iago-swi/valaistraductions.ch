@@ -1,0 +1,34 @@
+RewriteEngine On
+RewriteBase /
+
+# ── Language redirect (root only) ────────────────────────────────────────────
+# Browser prefers French → /fr/ ; German → /de/ ; everything else → /en/.
+# R=302 (not 301) so browsers don't cache the choice permanently.
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{HTTP:Accept-Language} ^fr [NC]
+RewriteRule ^ /fr/ [R=302,L]
+
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{HTTP:Accept-Language} ^de [NC]
+RewriteRule ^ /de/ [R=302,L]
+
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^ /en/ [R=302,L]
+
+# ── Old WordPress addresses ──────────────────────────────────────────────────
+# Keeps existing links and search results working after the move to static pages.
+# English (the old site had English at the root)
+RewriteRule ^about/?$ /en/#about [R=301,NE,L]
+RewriteRule ^contact/?$ /en/#contact [R=301,NE,L]
+RewriteRule ^(betisier|blog)/?$ /en/betisier.html [R=301,L]
+RewriteRule ^project/ /en/#fields [R=301,NE,L]
+RewriteRule ^(never-twice-without-thrice|the-microsoft-fondue|continental-drift|a-long-awaited-software-change)/?$ /en/betisier.html#$1 [R=301,NE,L]
+
+# French
+RewriteRule ^fr/a-propos/?$ /fr/#about [R=301,NE,L]
+RewriteRule ^fr/contact-fr/?$ /fr/#contact [R=301,NE,L]
+RewriteRule ^fr/bloopers-betisier-fr/?$ /fr/betisier.html [R=301,L]
+RewriteRule ^fr/(jamais-deux-sans-trois|la-fondue-microsoft|lieux-de-cul|specialiste-pokemon)/?$ /fr/betisier.html#$1 [R=301,NE,L]
+
+# ── Custom 404 page ──────────────────────────────────────────────────────────
+ErrorDocument 404 /404.html
